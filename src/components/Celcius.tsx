@@ -1,14 +1,15 @@
 interface Props {
-  toFarhrenheid: (celcius: number) => void;
+  Temp: number;
 }
 
-const Celcius = ({ toFarhrenheid }: Props) => {
+const Celcius = ({ Temp }: Props) => {
   return (
     <>
       <input
         onChange={(e) => e.target.value}
         type="text"
         placeholder="Geeft Celcius Temp"
+        value={Temp}
       />
     </>
   );
